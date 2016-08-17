@@ -1,0 +1,52 @@
+
+ 
+ 
+  <div class="container" id="id1">
+<form id="demo-form " data-parsley-validate=""  >
+
+First name *: 
+  <p><input type="text" class="form-control" name="firstname"   data-parsley-trigger="keyup"  required=""></p><br>
+Last name *:
+ <p> <input type="text" class="form-control" name="lastname"  data-parsley-trigger="change"   required=""></p><br><br>
+
+
+    <label for="gender">Gender *:</label>
+  <p>
+    Male: <input type="radio" name="gender" id="genderM" value="Male" required="">
+    Female: <input type="radio" name="gender" id="genderF" value="Female">
+  </p>
+
+Email *:
+<input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
+
+<br><br>
+  <label for="message">Address *:</label>
+ <p> <textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="  at least  20 character " data-parsley-validation-threshold="10" required=""></textarea>
+  </p>
+
+    <label for="heard">Qualification *:</label>
+<select name="course" id="heard" required="">
+<option value="btech">Btech</option>
+<option value="bsc">BSC</option>
+<option value="mtech">MTECH</option>
+<option value="bcom">BCOM</option>
+</select>
+<br><br>
+
+ <label for="Languages">Languages *:</label>
+ <p>
+ English <input type="checkbox" name="languages[]" id="hobby1" value="english" data-parsley-mincheck="2" data-parsley-mincheck-message="select atleast two" required=""><br>
+    Hindi <input type="checkbox" name="languages[]" id="hobby2" value="hindi"><br>
+        Malayalam <input type="checkbox" name="languages[]" id="hobby2" value="malayalam"><br>
+            Tamil <input type="checkbox" name="languages[]" id="hobby2" value="tamil"><br>
+                Kannada <input type="checkbox" name="languages[]" id="hobby2" value="kannada"><br>
+ </p>
+  <br>
+  <br>
+  
+  <input type="submit" class="btn btn-default" value="submit">
+
+
+</form>
+</div>
+
